@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM python:3
 
 WORKDIR /code
 
@@ -8,7 +8,7 @@ COPY imdblist.py .
 
 COPY imdblist2.py .
 
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 
 CMD [ "python3", "imdblist.py" ]
